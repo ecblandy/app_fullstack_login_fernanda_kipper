@@ -4,7 +4,7 @@
     <h2 class="text-[1.25rem] font-bold mb-[2.8125rem]">{{ title }}</h2>
     <ng-content />
     <div class="btn-wrapper">
-      <button class="button-auth bg-primary text-white">
+      <button [type]="submit" class="button-auth bg-primary text-white" (click)="submit()">
         {{ primaryBtnText }}
       </button>
 
@@ -14,7 +14,9 @@
         <div class="divisor"></div>
       </div>
 
-      <button class="button-auth border border-primary">{{ secondaryBtnText }}</button>
+      <button type="button" class="button-auth border border-primary" (click)="navigate()">
+        {{ secondaryBtnText }}
+      </button>
     </div>
   </section>
   <section

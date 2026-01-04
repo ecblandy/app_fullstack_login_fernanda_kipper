@@ -1,0 +1,20 @@
+<div class="text-input-text text-[1rem] text-start">
+  <label [for]="inputName" class="mb-[.625rem]">{{ label }}</label>
+  <div class="flex w-full">
+    <!-- Input -->
+    <input
+      [type]="type"
+      [placeholder]="placeholder"
+      [value]="value"
+      (input)="onInput($event)"
+      class="border border-gray-secondary-bg bg-input-bg py-[0.75rem] pl-[1.25rem] rounded-l-lg w-full"
+    />
+
+    <!-- icon -->
+    <div
+      class="flex items-center justify-center bg-primary w-[3.125rem] h-[3.125rem] rounded-r-lg cursor-pointer"
+    >
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>
