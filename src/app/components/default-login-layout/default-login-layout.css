@@ -1,0 +1,31 @@
+:root {
+  --color-primary: #7001fd;
+  --color-secondary: #1e2772;
+  --color-text-color: #555555;
+  --color-gray-bg: #c2c2c2;
+}
+
+.button-auth {
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 24px;
+  box-shadow: 0px 8px 12px 0px #9440ff33;
+  cursor: pointer;
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+}
+
+.divisor {
+  flex: 1;
+  background-color: var(--color-gray-bg);
+  height: 2px;
+}

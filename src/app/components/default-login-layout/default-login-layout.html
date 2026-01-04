@@ -1,12 +1,25 @@
-<main>
-  <section>
-    <img src="/assets/images/logo.svg" alt="" />
-    <h2></h2>
-    <button></button>
-    <div><span>or</span></div>
-    <button></button>
+<main class="flex flex-row items-center justify-center h-full">
+  <section class="flex flex-col items-center justify-center flex-[0.3] px-[2.1875rem]">
+    <img src="/assets/images/logo.svg" alt="" class="mb-[1.875rem]" />
+    <h2 class="text-[1.25rem] font-bold mb-[2.8125rem]">{{ title }}</h2>
+    <ng-content />
+    <div class="btn-wrapper">
+      <button class="button-auth bg-primary text-white">
+        {{ primaryBtnText }}
+      </button>
+
+      <div class="flex items-center gap-[.875rem] w-full">
+        <div class="divisor"></div>
+        <span class="font-[.75rem] font-normal uppercase text-gray-bg">or</span>
+        <div class="divisor"></div>
+      </div>
+
+      <button class="button-auth border border-primary">{{ secondaryBtnText }}</button>
+    </div>
   </section>
-  <section>
+  <section
+    class="flex flex-col items-center justify-center h-full space-y-[.5rem] flex-1 bg-gray-bg"
+  >
     <h1>You should, MoveIt!</h1>
     <img src="/assets/images/main-ilustration.svg" alt="" />
   </section>
